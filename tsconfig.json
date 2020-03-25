@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "ES2015",
+    "jsx": "react", // or "react-native"
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "lib": ["es2018", "dom"],
+    "resolveJsonModule": true,
+    "declaration": true
+  },
+  "include": ["lib/**/*", "src/**/*"],
+  "exclude": [
+    "node_modules",
+    "dest",
+    "android",
+    "ios",
+    "acceptance-tests",
+    ".jest",
+    "src/setupTests.ts",
+    "./node_modules/**/*"
+  ]
+}
