@@ -1,6 +1,11 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  output: {
+    path: path.join(__dirname, '..', 'src'),
+    libraryTarget: 'commonjs2',
+  },
   module: {
     rules: [
       {
@@ -14,6 +19,10 @@ module.exports = {
         },
       },
     ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
+    modules: [path.join(__dirname, '..', 'src'), 'node_modules'],
   },
   plugins: [new HtmlWebpackPlugin()],
 };
