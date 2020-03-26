@@ -1,7 +1,8 @@
-import '../styles/app.css';
-import React from 'react';
+import * as React from 'react';
 
-const App = () => {
+import '../styles/app.css';
+
+const App: React.FunctionComponent<{}> = () => {
   return (
     <div>
       <h1>Hello, Electron!</h1>

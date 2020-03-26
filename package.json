@@ -49,8 +49,21 @@
     "@babel/preset-env": "7.9.0",
     "@babel/preset-react": "7.9.4",
     "@babel/preset-typescript": "7.9.0",
+    "@types/babel__core": "7.1.6",
+    "@types/electron-devtools-installer": "2.2.0",
+    "@types/electron-packager": "14.0.0",
+    "@types/eslint": "6.1.8",
     "@types/eslint-plugin-prettier": "2.2.0",
+    "@types/file-loader": "4.2.0",
+    "@types/mini-css-extract-plugin": "0.9.0",
+    "@types/postcss-nested": "4.1.0",
     "@types/prettier": "1.19.1",
+    "@types/react": "16.9.25",
+    "@types/react-dom": "16.9.5",
+    "@types/stylelint": "9.10.1",
+    "@types/webpack": "4.41.8",
+    "@types/webpack-dev-server": "3.10.1",
+    "@types/webpack-merge": "4.1.5",
     "@typescript-eslint/eslint-plugin": "2.25.0",
     "@typescript-eslint/parser": "2.25.0",
     "babel-loader": "8.1.0",
@@ -83,6 +96,7 @@
     "typescript": "3.8.3",
     "webpack": "4.42.1",
     "webpack-cli": "3.3.11",
-    "webpack-dev-server": "3.10.3"
+    "webpack-dev-server": "3.10.3",
+    "webpack-merge": "4.2.2"
   }
 }
