@@ -1,29 +1,39 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "ES2015",
-    "jsx": "react", // or "react-native"
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
+    "target": "ES2018",
+    "module": "CommonJS",
+    "lib": ["dom", "esnext"],
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": true,
+    "jsx": "react",
+    "strict": true,
+    "pretty": true,
+    "sourceMap": true,
+    /* Additional Checks */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "removeComments": true,
-    "sourceMap": true,
-    "skipLibCheck": true,
-    "lib": ["es2018", "dom"],
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "declaration": true
+    "allowJs": true
   },
-  "include": ["lib/**/*", "src/**/*"],
   "exclude": [
-    "node_modules",
-    "dest",
-    "android",
-    "ios",
-    "acceptance-tests",
-    ".jest",
-    "src/setupTests.ts",
-    "./node_modules/**/*"
+    "test",
+    "release",
+    "app/main.prod.js",
+    "app/main.prod.js.map",
+    "app/renderer.prod.js",
+    "app/renderer.prod.js.map",
+    "app/style.css",
+    "app/style.css.map",
+    "app/dist",
+    "dll",
+    "app/main.js",
+    "app/main.js.map"
   ]
 }
